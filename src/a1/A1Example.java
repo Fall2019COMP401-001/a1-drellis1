@@ -1,8 +1,3 @@
-
-/*
- * test 
- */
-
 import java.util.Scanner;
 
 public class A1Example {
