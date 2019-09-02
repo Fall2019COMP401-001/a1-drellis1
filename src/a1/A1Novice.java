@@ -4,17 +4,17 @@
  */
 package a1;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class A1Novice {
 
 	public static void main(String[] args) {
 		// Class fields.
 		Scanner input = new Scanner(System.in);
-		int numCustomer = input.nextInt();
+		int numCustomers = input.nextInt();
 
 		// While loop, handles input data.
-		while (numCustomer > 0) {
+		while (numCustomers > 0) {
 			char firstName = input.next().charAt(0);
 			String lastName = input.next();
 			int numItems = input.nextInt();
@@ -32,5 +32,6 @@ public class A1Novice {
 			System.out.println(firstName + ". " + lastName + ": " + total);
 			numCustomers--;
 		}
+		input.close();
 	}
 }

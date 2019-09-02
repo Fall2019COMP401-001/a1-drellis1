@@ -10,8 +10,8 @@ import java.text.*;
 public class A1Adept {
 
 	public static void main(String[] args) {
-		// Class fields.
 		Scanner input = new Scanner(System.in);
+
 		int numItems = input.nextInt();
 		String[] itemArray = new String[numItems];
 		double[] priceArray = new double[numItems];
@@ -66,7 +66,7 @@ public class A1Adept {
 		}
 		System.out.println("Biggest: " + maxName + " (" + max + ")");
 
-		// Function calculates lowest spender.
+		// Prints smallest spender
 		double min = 1000.0;
 		String minName = customerNameArray[0];
 		int j = 0;
@@ -79,7 +79,7 @@ public class A1Adept {
 		}
 		System.out.println("Smallest: " + minName + " (" + min + ")");
 
-		// Function averages total spending.
+		// Prints average of all spenders
 		double average = 0.0;
 		DecimalFormat df = new DecimalFormat("#.##");
 		int k = 0;
@@ -89,5 +89,6 @@ public class A1Adept {
 		}
 		average = average / customerTotalArray.length;
 		System.out.println("Average: " + df.format(average));
+		input.close();
 	}
 }

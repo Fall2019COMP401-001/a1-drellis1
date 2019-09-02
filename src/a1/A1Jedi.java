@@ -61,5 +61,6 @@ public class A1Jedi {
 						customerPurchaseArray[i] + " customers bought " + itemTotalArray[i] + " " + itemArray[i]);
 			}
 		}
+		input.close();
 	}
 }
