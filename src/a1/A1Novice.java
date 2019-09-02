@@ -29,7 +29,7 @@ public class A1Novice {
 				numItems--;
 			}
 			// Output.
-			System.out.println(firstName + ". " + lastName + ": " + total);
+			System.out.println(firstName + ". " + lastName + ": " + String.format("%.2f", total));
 			numCustomers--;
 		}
 		input.close();

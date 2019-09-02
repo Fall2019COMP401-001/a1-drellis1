@@ -64,7 +64,7 @@ public class A1Adept {
 			}
 			i++;
 		}
-		System.out.println("Biggest: " + maxName + " (" + max + ")");
+		System.out.println("Biggest: " + maxName + " (" + String.format("%.2f", max) + ")");
 
 		// Prints smallest spender
 		double min = 1000.0;
@@ -77,18 +77,17 @@ public class A1Adept {
 			}
 			j++;
 		}
-		System.out.println("Smallest: " + minName + " (" + min + ")");
+		System.out.println("Smallest: " + minName + " (" + String.format("%.2f", min) + ")");
 
 		// Prints average of all spenders
 		double average = 0.0;
-		DecimalFormat df = new DecimalFormat("#.##");
 		int k = 0;
 		while (k < customerTotalArray.length) {
 			average += customerTotalArray[k];
 			k++;
 		}
 		average = average / customerTotalArray.length;
-		System.out.println("Average: " + df.format(average));
+		System.out.println("Average: " + String.format("%.2f", average));
 		input.close();
 	}
 }
